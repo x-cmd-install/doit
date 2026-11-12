@@ -1,4 +1,15 @@
-- repo: deepin_23
+- repo: nix_stable_25_05
+  srcname: doit
+  visiblename: doit
+  version: 0.36.0
+  origversion: null
+  status: outdated
+  summary: Task management & automation tool
+  maintainers:
+    - mail@pascal-wittmann.de
+  licenses:
+    - MIT
+- repo: raspbian_stable
   subrepo: main
   srcname: doit
   binnames:
@@ -6,13 +17,13 @@
     - python-doit-doc
   visiblename: doit
   version: 0.36.0
-  origversion: 0.36.0-2
+  origversion: 0.36.0-5
   status: outdated
   maintainers:
     - team+python@tracker.debian.org
     - dparsons@debian.org
   categories:
-    - python
+    - misc
 - repo: alpine_edge
   subrepo: testing
   srcname: py3-doit
@@ -167,6 +178,21 @@
     - tin@debian.org
     - dererk@debian.org
     - inaki@malerba.space
+- repo: deepin_23
+  subrepo: main
+  srcname: doit
+  binnames:
+    - python3-doit
+    - python-doit-doc
+  visiblename: doit
+  version: 0.36.0
+  origversion: 0.36.0-2
+  status: outdated
+  maintainers:
+    - team+python@tracker.debian.org
+    - dparsons@debian.org
+  categories:
+    - python
 - repo: deepin_25
   subrepo: main
   srcname: doit
@@ -214,21 +240,6 @@
   categories:
     - misc
 - repo: fedora_39
-  subrepo: release
-  srcname: python-doit
-  binnames:
-    - python3-doit
-    - python3-doit-doc
-  visiblename: python-doit
-  version: 0.33.1
-  origversion: 0.33.1-10.fc39
-  status: legacy
-  summary: Automation Tool
-  licenses:
-    - MIT
-  categories:
-    - Unspecified
-- repo: fedora_39
   subrepo: updates
   srcname: python-doit
   binnames:
@@ -238,6 +249,36 @@
   version: 0.36.0
   origversion: 0.36.0-1.fc39
   status: outdated
+  summary: Automation Tool
+  licenses:
+    - MIT
+  categories:
+    - Unspecified
+- repo: raspbian_testing
+  subrepo: main
+  srcname: doit
+  binnames:
+    - python3-doit
+    - python-doit-doc
+  visiblename: doit
+  version: 0.36.0
+  origversion: 0.36.0-5
+  status: outdated
+  maintainers:
+    - team+python@tracker.debian.org
+    - dparsons@debian.org
+  categories:
+    - misc
+- repo: fedora_39
+  subrepo: release
+  srcname: python-doit
+  binnames:
+    - python3-doit
+    - python3-doit-doc
+  visiblename: python-doit
+  version: 0.33.1
+  origversion: 0.33.1-10.fc39
+  status: legacy
   summary: Automation Tool
   licenses:
     - MIT
@@ -359,17 +400,6 @@
     - MIT
   categories:
     - dev-python
-- repo: nix_stable_25_11
-  srcname: doit
-  visiblename: doit
-  version: 0.36.0
-  origversion: null
-  status: outdated
-  summary: Task management & automation tool
-  maintainers:
-    - mail@pascal-wittmann.de
-  licenses:
-    - MIT
 - repo: gnuguix
   srcname: python-doit
   binname: python-doit
@@ -457,17 +487,6 @@
   licenses:
     - MIT
 - repo: nix_stable_24_05
-  srcname: doit
-  visiblename: doit
-  version: 0.36.0
-  origversion: null
-  status: outdated
-  summary: A task management & automation tool
-  maintainers:
-    - mail@pascal-wittmann.de
-  licenses:
-    - MIT
-- repo: nix_stable_24_05
   srcname: python312Packages.doit
   visiblename: python3.12-doit
   version: 0.36.0
@@ -493,30 +512,17 @@
     - MIT
   categories:
     - python311Packages
-- repo: nix_stable_24_11
+- repo: nix_stable_24_05
   srcname: doit
   visiblename: doit
   version: 0.36.0
   origversion: null
   status: outdated
-  summary: Task management & automation tool
+  summary: A task management & automation tool
   maintainers:
     - mail@pascal-wittmann.de
   licenses:
     - MIT
-- repo: nix_stable_24_11
-  srcname: python312Packages.doit
-  visiblename: python3.12-doit
-  version: 0.36.0
-  origversion: null
-  status: outdated
-  summary: Task management & automation tool
-  maintainers:
-    - mail@pascal-wittmann.de
-  licenses:
-    - MIT
-  categories:
-    - python312Packages
 - repo: nix_stable_24_11
   srcname: python311Packages.doit
   visiblename: python3.11-doit
@@ -530,20 +536,7 @@
     - MIT
   categories:
     - python311Packages
-- repo: nix_stable_25_05
-  srcname: python313Packages.doit
-  visiblename: python3.13-doit
-  version: 0.36.0
-  origversion: null
-  status: outdated
-  summary: Task management & automation tool
-  maintainers:
-    - mail@pascal-wittmann.de
-  licenses:
-    - MIT
-  categories:
-    - python313Packages
-- repo: nix_stable_25_05
+- repo: nix_stable_24_11
   srcname: python312Packages.doit
   visiblename: python3.12-doit
   version: 0.36.0
@@ -556,7 +549,7 @@
     - MIT
   categories:
     - python312Packages
-- repo: nix_stable_25_05
+- repo: nix_stable_24_11
   srcname: doit
   visiblename: doit
   version: 0.36.0
@@ -567,7 +560,20 @@
     - mail@pascal-wittmann.de
   licenses:
     - MIT
-- repo: nix_stable_25_11
+- repo: nix_stable_25_05
+  srcname: python312Packages.doit
+  visiblename: python3.12-doit
+  version: 0.36.0
+  origversion: null
+  status: outdated
+  summary: Task management & automation tool
+  maintainers:
+    - mail@pascal-wittmann.de
+  licenses:
+    - MIT
+  categories:
+    - python312Packages
+- repo: nix_stable_25_05
   srcname: python313Packages.doit
   visiblename: python3.13-doit
   version: 0.36.0
@@ -593,6 +599,30 @@
     - MIT
   categories:
     - python312Packages
+- repo: nix_stable_25_11
+  srcname: python313Packages.doit
+  visiblename: python3.13-doit
+  version: 0.36.0
+  origversion: null
+  status: outdated
+  summary: Task management & automation tool
+  maintainers:
+    - mail@pascal-wittmann.de
+  licenses:
+    - MIT
+  categories:
+    - python313Packages
+- repo: nix_stable_25_11
+  srcname: doit
+  visiblename: doit
+  version: 0.36.0
+  origversion: null
+  status: outdated
+  summary: Task management & automation tool
+  maintainers:
+    - mail@pascal-wittmann.de
+  licenses:
+    - MIT
 - repo: nix_stable_26_05
   srcname: python313Packages.doit
   visiblename: doit
@@ -606,6 +636,16 @@
     - MIT
   categories:
     - python313Packages
+- repo: slackbuilds
+  srcname: python/doit
+  visiblename: python/doit
+  version: 0.36.0
+  origversion: null
+  status: outdated
+  maintainers:
+    - slack@giand.it
+  categories:
+    - python
 - repo: nix_stable_26_05
   srcname: python314Packages.doit
   visiblename: doit
@@ -821,46 +861,6 @@
     - inaki@malerba.space
   categories:
     - misc
-- repo: raspbian_stable
-  subrepo: main
-  srcname: doit
-  binnames:
-    - python3-doit
-    - python-doit-doc
-  visiblename: doit
-  version: 0.36.0
-  origversion: 0.36.0-5
-  status: outdated
-  maintainers:
-    - team+python@tracker.debian.org
-    - dparsons@debian.org
-  categories:
-    - misc
-- repo: raspbian_testing
-  subrepo: main
-  srcname: doit
-  binnames:
-    - python3-doit
-    - python-doit-doc
-  visiblename: doit
-  version: 0.36.0
-  origversion: 0.36.0-5
-  status: outdated
-  maintainers:
-    - team+python@tracker.debian.org
-    - dparsons@debian.org
-  categories:
-    - misc
-- repo: slackbuilds
-  srcname: python/doit
-  visiblename: python/doit
-  version: 0.36.0
-  origversion: null
-  status: outdated
-  maintainers:
-    - slack@giand.it
-  categories:
-    - python
 - repo: spack
   srcname: py-doit
   visiblename: py-doit
